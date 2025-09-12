@@ -20,7 +20,7 @@
 
 ###
 
-<p align="left">🎓 Master's student in AI & Data Science<br><br>- Focused on Machine Learning, NLP, and Data Science<br>- Building a Euroleague match predictor with scikit-learn<br>- Prototyping RAG Plot for eval & visualization of LLM outputs.</p>
+<p align="left">Master's student in AI & Data Science<br><br>- Focused on Machine Learning, NLP, and Data Science<br>- Building a Euroleague match predictor with scikit-learn<br>- Prototyping RAG Plot for eval & visualization of LLM outputs.</p>
 
 ###
 
