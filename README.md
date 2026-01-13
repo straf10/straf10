@@ -20,7 +20,7 @@
 
 ###
 
-<p align="left">Master's student in AI & Data Science<br><br>- Focused on Machine Learning, NLP, and Data Science<br>- Building a Euroleague match predictor with scikit-learn<br>- Prototyping RAG Plot for eval & visualization of LLM outputs.</p>
+<p align="left">Master's student in AI & Data Science<br><br>- Focused on Machine Learning, NLP, and Data Science<br>- Building a Euroleague match predictor with scikit-learn<br></p>
 
 ###
 
@@ -43,12 +43,3 @@
 
 ###
 
-<h3 align="left">Github Stats :</h3>
-
-###
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=straf10&theme=chartreuse-dark&hide_border=true" height="220" alt="streak graph"  />
-</div>
-
-###
