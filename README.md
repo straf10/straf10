@@ -1,14 +1,6 @@
 <div align="center">
-  <img height="150" src="https://em-content.zobj.net/source/apple/81/male-technologist_1f468-200d-1f4bb.png"  />
+  <img height="150" src="https://em-content.zobj.net/source/apple/453/man-technologist-light-skin-tone_1f468-1f3fb-200d-1f4bb.png"  />
 </div>
-
-###
-
-<div align="center">
-  <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="linkedin logo"  />
-</div>
-
-###
 
 ###
 
