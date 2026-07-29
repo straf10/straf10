@@ -1,0 +1,53 @@
+name: refresh portrait
+
+# Rebuilds ascii.svg from scripts/source/portrait.jpg (or .jpeg).
+# Path-filtered push: uploading a new photo via the GitHub UI triggers this.
+# Committing only ascii.svg afterwards does not re-trigger (paths filter).
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/source/portrait.jpg
+      - scripts/source/portrait.jpeg
+      - scripts/source/portrait.png
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-portrait
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: scripts/requirements.txt
+
+      - name: Install portrait pipeline deps
+        run: python3 -m pip install -r scripts/requirements.txt
+
+      - name: Draw ascii.svg
+        run: |
+          python3 scripts/generate_portrait.py
+          python3 scripts/embed_portrait_font.py
+
+      - name: Commit if ascii.svg changed
+        run: |
+          if [ -z "$(git status --porcelain -- ascii.svg)" ]; then
+            echo "no change"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- ascii.svg
+          git commit -m "portrait: refresh ascii.svg"
+          git push
