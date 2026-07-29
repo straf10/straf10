@@ -10,7 +10,8 @@ This repository is a **GitHub profile README** (`straf10/straf10`). There is no 
 - All graphics are **self-hosted SVGs** (no third-party badge/stats CDNs). The whole page makes **zero** third-party image requests.
 - Stat graphics + section headings: `scripts/generate_stats.py` (Python **stdlib only** + GitHub GraphQL).
 - ASCII portrait: `scripts/generate_portrait.py` + `scripts/embed_portrait_font.py` (needs deps in `scripts/requirements.txt`; first rembg run downloads a ~176 MB u2net model into `~/.u2net/`).
-- Daily refresh: `.github/workflows/stats.yml` (`workflow_dispatch` or cron). **No `push` trigger** — the job commits, and a push trigger would loop.
+- Stats refresh: `.github/workflows/stats.yml` (`workflow_dispatch` or cron). **No `push` trigger** — the job commits, and a push trigger would loop.
+- Portrait refresh: `.github/workflows/portrait.yml` — runs on **Actions → refresh portrait → Run workflow**, or automatically when `scripts/source/portrait.jpg` (also `.jpeg` / `.png`) is pushed to `main`. First CI run downloads the ~176 MB rembg model.
 
 ### Useful local commands
 
@@ -18,9 +19,9 @@ This repository is a **GitHub profile README** (`straf10/straf10`). There is no 
 # Refresh stats / heading SVGs (stdlib only; needs any GitHub token)
 GITHUB_TOKEN="$(gh auth token)" GH_LOGIN=straf10 python3 scripts/generate_stats.py
 
-# Rebuild the portrait (rare). Needs a tight face crop at scripts/source/portrait.jpg
+# Rebuild the portrait locally (or use Actions → refresh portrait online)
 python3 -m pip install --user -q -r scripts/requirements.txt
-python3 scripts/generate_portrait.py
+python3 scripts/generate_portrait.py   # reads portrait.jpg / .jpeg / .png
 python3 scripts/embed_portrait_font.py
 
 # Preview README (GitHub-flavoured). Prefer a tall viewport and wait ~5s —

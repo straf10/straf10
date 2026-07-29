@@ -28,8 +28,19 @@ from rembg import remove
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
-DEFAULT_SRC = os.path.join(HERE, "source", "portrait.jpg")
+SOURCE_DIR = os.path.join(HERE, "source")
 OUT = os.path.join(ROOT, "ascii.svg")
+
+
+def resolve_source(explicit: str | None = None) -> str:
+    """Prefer an explicit path, else the first portrait.* that exists."""
+    if explicit:
+        return explicit
+    for name in ("portrait.jpg", "portrait.jpeg", "portrait.png"):
+        path = os.path.join(SOURCE_DIR, name)
+        if os.path.exists(path):
+            return path
+    return os.path.join(SOURCE_DIR, "portrait.jpg")
 
 # Display geometry — 90 columns at 460px wide in the README.
 FS = 12.9
@@ -158,9 +169,12 @@ def draw(lines: list[str]) -> str:
 
 
 def main() -> None:
-    src = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_SRC
+    src = resolve_source(sys.argv[1] if len(sys.argv) > 1 else None)
     if not os.path.exists(src):
-        sys.exit(f"missing source image: {src}")
+        sys.exit(
+            f"missing source image: {src}\n"
+            f"Upload scripts/source/portrait.jpg (or .jpeg / .png), then re-run."
+        )
 
     grey = prepare(src)
     lines = sample_grid(grey, COLS)
