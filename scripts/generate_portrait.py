@@ -47,10 +47,20 @@ RAMP = " .`-:+=*cs#%@"
 
 
 def prepare(path: str) -> np.ndarray:
-    """Load → rembg → bilateral → CLAHE → darkening curve. Returns uint8 grey."""
+    """Load → rembg → crop subject → bilateral → CLAHE → darkening curve."""
     with open(path, "rb") as f:
         cut = remove(f.read())  # PNG bytes, RGBA, bg removed
     rgba = np.array(Image.open(__import__("io").BytesIO(cut)).convert("RGBA"))
+
+    # Tight crop to the opaque subject so tall phone photos don't leave a
+    # giant empty margin that collapses the face to a few dozen characters.
+    alpha_u8 = rgba[:, :, 3]
+    ys, xs = np.where(alpha_u8 > 16)
+    if len(xs) > 0:
+        pad = 8
+        y0, y1 = max(0, ys.min() - pad), min(rgba.shape[0], ys.max() + pad + 1)
+        x0, x1 = max(0, xs.min() - pad), min(rgba.shape[1], xs.max() + pad + 1)
+        rgba = rgba[y0:y1, x0:x1]
 
     # Composite onto white so the removed background maps to the blank ramp.
     alpha = rgba[:, :, 3:4].astype(np.float32) / 255.0
