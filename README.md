@@ -31,7 +31,7 @@ Science at the University of Macedonia. Open to ML/AI Engineer roles from Septem
 
 **Iran War Live Tracker** &nbsp;·&nbsp; <samp>python, fastapi, postgres</samp><br>
 Real-time conflict tracker from multi-source Telegram channels with LLM summarization<br>
-and strike-location mapping. Sub-2s responses, €4–5/month on Hetzner.
+and strike-location mapping.
 
 **[Euroleague_Prediction_Model](https://github.com/straf10/Euroleague_Prediction_Model)** &nbsp;·&nbsp; <samp>python, catboost, optuna</samp><br>
 Two-stage CatBoost + Monte Carlo pipeline for EuroLeague outcomes. Elo, four-factors,<br>
@@ -49,26 +49,6 @@ single-bidding rates. Methodology-first ahead of public dashboard release.
 
 <img src="./langs.svg" width="620" alt="Top languages by bytes and by repo"/>
 
-<img src="./year.svg" width="620" alt="The last year, one character per day"/>
+<img src="./year.svg" width="620" alt="Active days in the last year"/>
 
 </div>
-
-<img src="./hd-about-this-page.svg" width="620" alt="about this page"/>
-
-Every graphic here is generated, not embedded from anyone else's server.<br>
-`ascii.svg` is a photo pushed through a character ramp; the stat graphics and<br>
-these section headings are drawn by [a scheduled action](.github/workflows/stats.yml)<br>
-straight from the GitHub GraphQL API, once a day, committing only what changed.
-
-They animate with SMIL inside the SVG, because GitHub strips scripts from<br>
-READMEs — and since nothing loads from a third party, nothing here can<br>
-rate-limit or go dark. The headings are SVGs for the same reason: GitHub also<br>
-strips CSS, so an image is the only way to put this page's own typeface on them.
-
-The typeface is [JetBrains Mono](scripts/fonts), subset to just the characters<br>
-each graphic draws and inlined as base64. That isn't only for looks: the<br>
-portrait's grid assumes an advance width of exactly 0.600 em, and a viewer whose<br>
-default monospace is narrower would otherwise see it squeezed.
-
-Language totals cover public repositories only. `year.svg` uses the portrait's<br>
-character ramp: `:` `+` `#` `@`, quiet to loud.
