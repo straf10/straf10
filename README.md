@@ -12,12 +12,12 @@
 
 <img src="./hd-about.svg" width="620" alt="about"/>
 
-> AI/ML Engineer in Thessaloniki. Clinical NLP, ensemble methods, sports analytics.<br>
-> Production systems over notebooks.
+> AI/ML Engineer based in Thessaloniki, Greece.<br>
+> Iterate until it's right, then iterate more.<br>
 
-I build production-grade ML — from multi-label clinical text classification on Greek medical<br>
-records to full-stack data transparency pipelines. Currently finishing an MSc in AI &amp; Data<br>
-Science at the University of Macedonia. Open to ML/AI Engineer roles from September 2026.
+Working across text classification, ensemble modeling, and sports forecasting. <br>
+Finishing an MSc in AI & Data Science (University of Macedonia, 2026).
+
 
 <img src="./hd-stack.svg" width="620" alt="stack"/>
 
