@@ -25,7 +25,7 @@ Finishing an MSc in AI & Data Science (University of Macedonia, 2026).
 
 <img src="./hd-projects.svg" width="620" alt="projects"/>
 
-**[aida-elcardiocc-26](https://github.com/straf10/aida-elcardiocc-26)** &nbsp;·&nbsp; <samp>python, transformers, catboost</samp><br>
+**[CardioICD](https://github.com/straf10/CardioICD)** &nbsp;·&nbsp; <samp>python, transformers, catboost</samp><br>
 1st-place multi-label ICD-10 classifier for Greek cardiology discharge summaries.<br>
 6-component ensemble, 0.8667 micro-F1, published at CLEF 2026.
 
