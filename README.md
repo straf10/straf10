@@ -33,10 +33,6 @@ Finishing an MSc in AI & Data Science (University of Macedonia, 2026).
 Autonomous options-trading agent on Alpaca paper trading: multi-model LLM debate,<br>
 risk-gated sizing, and a live dashboard. Built for the Alpaca AI Trading Agents Hackathon.
 
-**[Euroleague_Prediction_Model](https://github.com/straf10/Euroleague_Prediction_Model)** &nbsp;·&nbsp; <samp>python, catboost, optuna</samp><br>
-Two-stage CatBoost + Monte Carlo pipeline for EuroLeague outcomes. Elo, four-factors,<br>
-walk-forward validation. Tuning in progress.
-
 **[GovTrace](https://github.com/straf10/GovTrace)** &nbsp;·&nbsp; <samp>python, duckdb, cloudflare</samp><br>
 Greek public procurement transparency: fraud/risk indicators, Benford anomalies,<br>
 single-bidding rates. Methodology-first ahead of public dashboard release.
