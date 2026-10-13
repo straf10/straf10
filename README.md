@@ -1,8 +1,6 @@
 <div align="center">
 
-<img src="./ascii.svg" width="460" alt="Nikos Strafiotis"/>
-
-<img src="./stats.svg" width="620" alt="Contributions in the last year"/>
+# Hi 👋, I'm Nikos
 
 [linkedin](https://www.linkedin.com/in/strafiotis/) &nbsp;·&nbsp;
 [email](mailto:strafiotis10@gmail.com) &nbsp;·&nbsp;
@@ -28,6 +26,10 @@ Finishing an MSc in AI & Data Science (University of Macedonia, 2026).
 **[CardioICD](https://github.com/straf10/CardioICD)** &nbsp;·&nbsp; <samp>python, transformers, catboost</samp><br>
 1st-place multi-label ICD-10 classifier for Greek cardiology discharge summaries.<br>
 6-component ensemble, 0.8667 micro-F1, published at CLEF 2026.
+
+**[675hoops](https://github.com/straf10/675hoops-Euroleague-Analytics)** &nbsp;·&nbsp; <samp>python, duckdb, astro</samp><br>
+EuroLeague game forecasts and season simulations from play-by-play and box scores.<br>
+Live at [675hoops.com](https://675hoops.com).
 
 **[Berkshire-Alpha](https://github.com/straf10/Berkshire-Alpha)** &nbsp;·&nbsp; <samp>python, fastapi, next.js</samp><br>
 Autonomous options-trading agent on Alpaca paper trading: multi-model LLM debate,<br>
