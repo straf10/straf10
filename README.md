@@ -39,7 +39,8 @@ risk-gated sizing, and a live dashboard. Built for the Alpaca AI Trading Agents 
 
 **[GovTrace](https://github.com/straf10/GovTrace)** &nbsp;·&nbsp; <samp>python, duckdb, cloudflare</samp><br>
 Greek public procurement transparency: fraud/risk indicators, Benford anomalies,<br>
-single-bidding rates. Methodology-first ahead of public dashboard release.
+single-bidding rates.<br>
+Live at [govtrace.pages.dev](https://govtrace.pages.dev/).
 
 <img src="./hd-stats.svg" width="620" alt="stats"/>
 
