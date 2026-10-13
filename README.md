@@ -1,10 +1,6 @@
 <div align="center">
 
-# Hi 👋, I'm Nikos
-
-[linkedin](https://www.linkedin.com/in/strafiotis/) &nbsp;·&nbsp;
-[email](mailto:strafiotis10@gmail.com) &nbsp;·&nbsp;
-[github](https://github.com/straf10)
+# Hi, I'm Nikos
 
 </div>
 
@@ -16,6 +12,12 @@
 Working across text classification, ensemble modeling, and sports forecasting. <br>
 Finishing an MSc in AI & Data Science (University of Macedonia, 2026).
 
+<div align="center">
+
+[linkedin](https://www.linkedin.com/in/strafiotis/) &nbsp;·&nbsp;
+[email](mailto:strafiotis10@gmail.com)
+
+</div>
 
 <img src="./hd-stack.svg" width="620" alt="stack"/>
 
