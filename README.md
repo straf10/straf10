@@ -27,7 +27,7 @@ Finishing an MSc in AI & Data Science (University of Macedonia, 2026).
 
 **[CardioICD](https://github.com/straf10/CardioICD)** &nbsp;·&nbsp; <samp>python, transformers, catboost</samp><br>
 1st-place multi-label ICD-10 classifier for Greek cardiology discharge summaries.<br>
-6-component ensemble, 0.8667 micro-F1, published at CLEF 2026.
+6-component ensemble, 0.8667 micro-F1, [published at CLEF 2026](https://ceur-ws.org/Vol-4283/paper43.pdf).
 
 **[675hoops](https://github.com/straf10/675hoops-Euroleague-Analytics)** &nbsp;·&nbsp; <samp>python, duckdb, astro</samp><br>
 EuroLeague game forecasts and season simulations from play-by-play and box scores.<br>
