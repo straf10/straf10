@@ -15,7 +15,7 @@ Finishing an MSc in AI & Data Science (University of Macedonia, 2026).
 <div align="center">
 
 [linkedin](https://www.linkedin.com/in/strafiotis/) &nbsp;·&nbsp;
-[email](mailto:strafiotis10@gmail.com)
+[email](mailto:strafresume@gmail.com)
 
 </div>
 
