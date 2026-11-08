@@ -33,10 +33,6 @@ Finishing an MSc in AI & Data Science (University of Macedonia, 2026).
 EuroLeague game forecasts and season simulations from play-by-play and box scores.<br>
 Live at [675hoops.com](https://675hoops.com).
 
-**[Berkshire-Alpha](https://github.com/straf10/Berkshire-Alpha)** &nbsp;·&nbsp; <samp>python, fastapi, next.js</samp><br>
-Autonomous options-trading agent on Alpaca paper trading: multi-model LLM debate,<br>
-risk-gated sizing, and a live dashboard. Built for the Alpaca AI Trading Agents Hackathon.
-
 **[GovTrace](https://github.com/straf10/GovTrace)** &nbsp;·&nbsp; <samp>python, duckdb, cloudflare</samp><br>
 Greek public procurement transparency: fraud/risk indicators, Benford anomalies,<br>
 single-bidding rates.<br>
