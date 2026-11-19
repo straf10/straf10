@@ -7,9 +7,9 @@
 <img src="./hd-about.svg" width="620" alt="about"/>
 
 > AI/ML Engineer based in Thessaloniki, Greece.<br>
-> Iterate until it's right, then iterate more.<br>
+> Do more.<br>
 
-Working across text classification, ensemble modeling, and sports forecasting. <br>
+Currently studying about swarm coordination, UAVs and multi-sensor fusion. <br>
 Finishing an MSc in AI & Data Science (University of Macedonia, 2026).
 
 <div align="center">
