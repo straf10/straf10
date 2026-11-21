@@ -10,7 +10,7 @@
 > Do more.<br>
 
 Currently studying about swarm coordination, UAVs and multi-sensor fusion. <br>
-Finishing an MSc in AI & Data Science (University of Macedonia, 2026).
+Finishing a MSc in AI & Data Science (University of Macedonia, 2026).
 
 <div align="center">
 
